@@ -415,7 +415,7 @@ export default function Content(props) {
 
           <input
             type="text"
-            style={{ flex: 3 / 6 , outline:"none" }}
+            style={{ flex: 3 / 6, outline: "none" }}
             className="border-0"
             placeholder="Pin Code"
           />

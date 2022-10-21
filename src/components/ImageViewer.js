@@ -90,20 +90,15 @@ export default function ImageViewer(props) {
     vertical: true,
     verticalSwiping: true,
     focusOnSelect: false,
-    beforeChange: function (currentSlide, nextSlide) {
-    },
-    afterChange: function (currentSlide) {
-    },
+    beforeChange: function (currentSlide, nextSlide) {},
+    afterChange: function (currentSlide) {},
   };
   const next = () => slider.current.slickNext();
   const previous = () => slider.current.slickPrev();
 
   return (
     <>
-      <div
-        className="row sticky-top"
-        style={{ top: `${navHeight + 20}px`,  }}
-      >
+      <div className="row sticky-top" style={{ top: `${navHeight + 20}px` }}>
         <div className="col-2">
           <div
             className="d-flex flex-column"
@@ -166,33 +161,31 @@ export default function ImageViewer(props) {
                   textAlign: "center",
                 }}
               >
-           
                 <span className="mx-auto">
                   <AiOutlineShoppingCart className="me-4 mb-1" />
                   Add To Cart
                 </span>
-              
               </IconButton>
             </div>
             <div className="ms-2" style={{ flex: 1 / 2 }}>
-            <Link to={"/address"}>
-              <IconButton
-                background={Colors.Primary}
-                hover={Colors.PrimaryDark}
-                color="white"
-                className="w-100 py-3"
-                style={{
-                  fontWeight: "bold",
-                  textTransform: "uppercase",
-                  textAlign: "center",
-                }}
-              >
-                <span className="mx-auto">
-                  {" "}
-                  <BsFillHandbagFill className="me-4 mb-1" />
-                  Buy Now
-                </span>
-              </IconButton>
+              <Link to={"/address"}>
+                <IconButton
+                  background={Colors.Primary}
+                  hover={Colors.PrimaryDark}
+                  color="white"
+                  className="w-100 py-3"
+                  style={{
+                    fontWeight: "bold",
+                    textTransform: "uppercase",
+                    textAlign: "center",
+                  }}
+                >
+                  <span className="mx-auto">
+                    {" "}
+                    <BsFillHandbagFill className="me-4 mb-1" />
+                    Buy Now
+                  </span>
+                </IconButton>
               </Link>
             </div>
           </div>

@@ -211,3 +211,34 @@ outline: none;
   width: 190px;
   overflow: hidden}
 
+  .medium{
+    font-weight: 500;
+    font-size:large;
+  }
+  .x-small{
+    font-size: small;
+  }
+  .bold-small{
+    font-weight: 500;
+    font-size:small;
+  }
+  .x-small-color{
+    font-size: 12px;
+    font-weight: 500;
+    color: grey;
+  
+  }
+  .green-bold-small{
+    font-weight: 500;
+    font-size:small;
+    color: green;
+  }
+  .red-bold-small{
+    font-weight: 500;
+    font-size:small;
+    color: rgb(197, 14, 14);
+  }
+  .bold-medium{
+    font-weight: 500;
+    font-size:medium;
+  }
