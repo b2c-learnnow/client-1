@@ -8,8 +8,10 @@ import { BsFillBagCheckFill } from "react-icons/bs";
 import { contactInfo } from "../services/homePage";
 import { Link } from "react-router-dom";
 import { MdLogout } from "react-icons/md";
-import Login from "../components/login"
+import Login from "../pages/loginpage";
 const TopNav = () => {
+  const [openModel, setOpenModel] = useState(false);
+
   const [state, setState] = useState({
     mobile: 9999900000,
     email: "wwww.xxxxx@gmail.com",
@@ -41,26 +43,26 @@ const TopNav = () => {
       }}
     >
       <div className="container d-flex justify-content-between align-items-center">
-        <div class="d-flex">
-          <p class="mx-2">
-            <AiFillPhone className="mx-2" />
+        <div className="d-flex">
+          <p className="mx-2">
+            <AiFillPhone classNameName="mx-2" />
             {state.mobile}
           </p>
           /
           <p>
-            <HiOutlineMail className="mx-2" />
+            <HiOutlineMail classNameName="mx-2" />
             {state.email}
           </p>
         </div>
-        <div class="d-flex align-items-center">
+        <div className="d-flex align-items-center">
           <Link to={"/myprofile"}>
-          <IconButton
-            className="mx-2 px-2"
-            hover={Colors.Primary}
-            background={Colors.PrimaryDark}
-          >
-            <AiFillSetting className="me-2" /> Settings
-          </IconButton>{" "}
+            <IconButton
+              classNameName="mx-2 px-2"
+              hover={Colors.Primary}
+              background={Colors.PrimaryDark}
+            >
+              <AiFillSetting className="me-2" /> Settings
+            </IconButton>{" "}
           </Link>
           /
           <IconButton
@@ -71,34 +73,29 @@ const TopNav = () => {
             <BsFillBagCheckFill className="me-2" /> Orders
           </IconButton>
           /
-         
           <IconButton
             className="mx-2 px-2"
             hover={Colors.Primary}
             background={Colors.PrimaryDark}
-            data-toggle="modal" data-target="#exampleModal"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
           >
-            <MdLogout className="me-2" /> Logout
+            <MdLogout className="me-2" />
+            Login
           </IconButton>
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+          <div
+            className="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div className="modal-dialog modal-dialog-centered">
+              <div className="modal-content">
+                <Login />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
