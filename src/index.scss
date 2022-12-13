@@ -242,3 +242,47 @@ outline: none;
     font-weight: 500;
     font-size:medium;
   }
+
+  .openmodel{
+    display: none;
+  }
+  .loginbluecard{
+    height: 500px;
+  width : 230px;
+  background-color:#3949ab;
+  border-radius:  3px;
+  color: White;
+  font-family: sans-serif,
+  }
+  .logincard{
+    display: flex;
+    align-content:center;
+  }
+  .loginwhitecard{
+    height: 500px;
+    width: 400px;
+    background-color: White;
+    border-radius:  3px;
+  }
+  .greysmallfont{
+    font-size: 13px;
+    font-weight: 500;
+    color: #757575,
+  }
+  .primarysmallfont{
+    font-size: 13px;
+    font-weight: 500;
+    color: #3949ab, 
+  }
+  .greycenterfont{
+    color: #bdbdbd;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .primarymediumfont{
+    font-weight: 500;
+    font-size: 14px;
+    color: #3949ab;
+    text-align: center;
+  }

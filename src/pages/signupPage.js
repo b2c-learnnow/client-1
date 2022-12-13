@@ -15,28 +15,9 @@ const Whitebackground = styled.div({
   backgroundColor: Colors.creamy,
 });
 
-const Bluecard = styled.div({
-  height: "500px",
-  width: "230px",
-  backgroundColor: Colors.Primary,
-  borderRadius: " 3px",
-  color: Colors.White,
 
-  fontFamily: "sans-serif",
-});
 
-const Whitecard = styled.div({
-  height: "500px",
-  width: "400px",
-  backgroundColor: Colors.White,
-  borderRadius: " 3px",
-});
 
-const Signupcard = styled.div({
-  display: "flex",
-  paddingLeft: "370px",
-  paddingTop: "85px",
-});
 
 const BluecardFont = styled.p({
   fontFamily: "sans-serif",
@@ -102,13 +83,11 @@ export default function addressPage() {
   return (
     <div className="w-100 h-100 m-0 p-0">
       <div>
-        <TopNav />
-        <Header />
-        <SearchBar selectedCategory={"All Categories"} queryParams={""} />
+       
         <div>
           <Whitebackground>
-            <Signupcard>
-              <Bluecard>
+            <div className="logincard">
+              <div className="loginbluecard">
                 <BluecardFont className="pt-4 ps-3">
                   {" "}
                   Looks like you're new here!{" "}
@@ -127,8 +106,8 @@ export default function addressPage() {
                     }}
                   />
                 </div>
-              </Bluecard>
-              <Whitecard>
+              </div>
+              <div className="loginwhitecard">
                 <div className="pt-5">
                   <div className="container pt-4">
                     <InputNumber
@@ -163,12 +142,12 @@ export default function addressPage() {
                     </Link>
                   </div>
                 </div>
-              </Whitecard>
-            </Signupcard>
+              </div>
+            </div>
           </Whitebackground>
         </div>
 
-        <Footer />
+
       </div>
     </div>
   );
