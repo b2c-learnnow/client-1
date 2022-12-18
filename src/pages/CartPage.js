@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import IconButton from "../elements/IconButton";
 import { Colors } from "../config/Colors";
 import { BsFillHandbagFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 const CartItem = [
   {
     imgUrl:
@@ -20,8 +21,7 @@ const CartItem = [
     Removebtn: "REMOVE",
     Delivery: "Delivery by Thu Nov 26 | $5",
     Policy: "     7 Days Replacement Policy",
-  },
-  {
+  }, {
     imgUrl:
       "https://images.unsplash.com/photo-1588546506381-74592e9b8a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzN8fGxhcHRvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
     ProductName:
@@ -35,62 +35,7 @@ const CartItem = [
     Delivery: "Delivery by Thu Nov 26 | $5",
     Policy: "     7 Days Replacement Policy",
   },
-  {
-    imgUrl:
-      "https://images.unsplash.com/photo-1588546506381-74592e9b8a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzN8fGxhcHRvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-    ProductName:
-      " HP Athlon Dual Core 3050U - (8 GB/256 GB SSD/Windows 11 Home) 14s-fq0568AU Thin and Light Laptop",
-    desc: " The outstanding Asus VivoBook 15 laptop, created to simplify your workday and improve performance.",
-    Price: "$500",
-    Offer: "      27% Off offers applied",
-    OfferPrice: "Or Pay $500 + $1",
-    Savebtn: "SAVE FOR LATER",
-    Removebtn: "REMOVE",
-    Delivery: "Delivery by Thu Nov 26 | $5",
-    Policy: "     7 Days Replacement Policy",
-  },
-  {
-    imgUrl:
-      "https://images.unsplash.com/photo-1588546506381-74592e9b8a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzN8fGxhcHRvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-    ProductName:
-      " HP Athlon Dual Core 3050U - (8 GB/256 GB SSD/Windows 11 Home) 14s-fq0568AU Thin and Light Laptop",
-    desc: " The outstanding Asus VivoBook 15 laptop, created to simplify your workday and improve performance.",
-    Price: "$500",
-    Offer: "      27% Off offers applied",
-    OfferPrice: "Or Pay $500 + $1",
-    Savebtn: "SAVE FOR LATER",
-    Removebtn: "REMOVE",
-    Delivery: "Delivery by Thu Nov 26 | $5",
-    Policy: "     7 Days Replacement Policy",
-  },
-  {
-    imgUrl:
-      "https://images.unsplash.com/photo-1588546506381-74592e9b8a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzN8fGxhcHRvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-    ProductName:
-      " HP Athlon Dual Core 3050U - (8 GB/256 GB SSD/Windows 11 Home) 14s-fq0568AU Thin and Light Laptop",
-    desc: " The outstanding Asus VivoBook 15 laptop, created to simplify your workday and improve performance.",
-    Price: "$500",
-    Offer: "      27% Off offers applied",
-    OfferPrice: "Or Pay $500 + $1",
-    Savebtn: "SAVE FOR LATER",
-    Removebtn: "REMOVE",
-    Delivery: "Delivery by Thu Nov 26 | $5",
-    Policy: "     7 Days Replacement Policy",
-  },
-  {
-    imgUrl:
-      "https://images.unsplash.com/photo-1588546506381-74592e9b8a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzN8fGxhcHRvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-    ProductName:
-      " HP Athlon Dual Core 3050U - (8 GB/256 GB SSD/Windows 11 Home) 14s-fq0568AU Thin and Light Laptop",
-    desc: " The outstanding Asus VivoBook 15 laptop, created to simplify your workday and improve performance.",
-    Price: "$500",
-    Offer: "      27% Off offers applied",
-    OfferPrice: "Or Pay $500 + $1",
-    Savebtn: "SAVE FOR LATER",
-    Removebtn: "REMOVE",
-    Delivery: "Delivery by Thu Nov 26 | $5",
-    Policy: "     7 Days Replacement Policy",
-  },
+
   {
     imgUrl:
       "https://images.unsplash.com/photo-1588546506381-74592e9b8a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzN8fGxhcHRvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
@@ -228,25 +173,27 @@ export default function Cart() {
                 marginBottom: "40px",
               }}
             >
-              <IconButton
-                background={Colors.Primary}
-                hover={Colors.PrimaryDark}
-                color="white"
-                className=" py-3"
-                style={{
-                  fontWeight: "bold",
-                  textTransform: "uppercase",
-                  textAlign: "center",
-                  height: "35px",
-                  width: "180px",
-                }}
-              >
-                <span className="mx-auto">
-                  {" "}
-                  <BsFillHandbagFill className="me-2 mb-1" />
-                  PLACE ORDER
-                </span>
-              </IconButton>
+              <Link to={"/address"}>
+                <IconButton
+                  background={Colors.Primary}
+                  hover={Colors.PrimaryDark}
+                  color="white"
+                  className=" py-3"
+                  style={{
+                    fontWeight: "bold",
+                    textTransform: "uppercase",
+                    textAlign: "center",
+                    height: "35px",
+                    width: "180px",
+                  }}
+                >
+                  <span className="mx-auto">
+                    {" "}
+                    <BsFillHandbagFill className="me-2 mb-1" />
+                    PLACE ORDER
+                  </span>
+                </IconButton>
+              </Link>
             </div>
           </div>
           <Footer />
