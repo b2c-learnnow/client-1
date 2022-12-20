@@ -2,7 +2,7 @@ import React from "react";
 import ProductImage from "../assets/images/product1.jpeg";
 import Product from "../elements/Product"
 import HeaderNormal from "../elements/HeaderNormal"
-
+import Slider from "react-slick";
 const data = [
   {
     id: "1",
@@ -79,14 +79,23 @@ const data = [
 
 
 export default function FeaturedProducts() {
+ 
   return (
     <div className="container my-5">
       <HeaderNormal>Featured Products</HeaderNormal>
-      <div className="inline-flex">{
+      
+      <div className="inline-flex">
+     
+        
+        {
           data.map((item)=>(
               <Product {...item} />
           ))
-      }</div>
+      }
+            </div>
+     
+      
+
     </div>
   );
 }

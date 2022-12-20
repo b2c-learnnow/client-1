@@ -9,8 +9,85 @@ import FeaturedProducts from "../components/FeaturedProducts";
 import HotDeals from "../components/HotDeals";
 import Footer from "../components/Footer"
 import NewArrival from "../components/NewArrival";
+import ProductImage from "../assets/images/product1.jpeg";
+import Product from "../elements/Product"
+import HeaderNormal from "../elements/HeaderNormal"
 
 export default function HomePage(){
+
+const data = [
+        {
+          id: "1",
+          name: "Slim Fit Denim Scratched High Quality Men's",
+          price: "9.00",
+          discount: "2.25",
+          rating: "4",
+          label: "New",
+          image: ProductImage,
+        },
+        {
+          id: "2",
+          name: "Slim Fit Denim Scratched High Quality Men's",
+          price: "9.00",
+          discount: "2.25",
+          rating: "4",
+          label: "New",
+          image: ProductImage,
+        },
+        {
+          id: "3",
+          name: "Slim Fit Denim Scratched High Quality Men's",
+          price: "9.00",
+          rating: "4",
+          label: "New",
+          image: ProductImage,
+        },
+        {
+          id: "4",
+          name: "Slim Fit Denim Scratched High Quality Men's",
+          price: "9.00",
+          rating: "4",
+          label: "New",
+          image: ProductImage,
+        },
+        {
+          id: "5",
+          name: "Slim Fit Denim Scratched High Quality Men's",
+          price: "9.00",
+          discount: "2.25",
+          rating: "4",
+          label: "New",
+          image: ProductImage,
+        },
+        {
+          id: "6",
+          name: "Slim Fit Denim Scratched High Quality Men's",
+          price: "9.00",
+          discount: "2.25",
+          rating: "4",
+          label: "New",
+          image: ProductImage,
+        },
+        {
+          id: "7",
+          name: "Slim Fit Denim Scratched High Quality Men's",
+          price: "9.00",
+          discount: "2.25",
+          rating: "4",
+          label: "New",
+          image: ProductImage,
+        },
+        {
+          id: "8",
+          name: "Slim Fit Denim Scratched High Quality Men's",
+          price: "9.00",
+          discount: "2.25",
+          rating: "4",
+          label: "New",
+          image: ProductImage,
+        },
+      ];
+      
     return (
         <div className="w-100 h-100 m-0 p-0">
             <div>
@@ -21,7 +98,7 @@ export default function HomePage(){
                 <Carousel />
                 <Features />
                 <ProductSuggestion1 />
-                <FeaturedProducts /> 
+                <FeaturedProducts data={data}/> 
                 <HotDeals />
                 <NewArrival />
                 <Footer />

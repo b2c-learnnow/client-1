@@ -3,7 +3,7 @@ import { Colors } from "../config/Colors";
 import { Font } from "../config/Font";
 import { Link } from "react-router-dom";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
-
+import Slider from "react-slick";
 export default function Product({
   image,
   label,
@@ -13,7 +13,15 @@ export default function Product({
   containerWidth,
   containerClass,
 }) {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
   return (
+
     <Link
       to={"/product?id=1001"}
       className={`m-3 ${containerClass}`}
@@ -25,6 +33,8 @@ export default function Product({
       }}
     >
       {/* Label Space */}
+      
+      
       <div
         className="d-flex justify-content-center"
         style={{ width: "150px", height: "150px" }}
@@ -71,6 +81,8 @@ export default function Product({
           </span>
         )}
       </p>
+   
     </Link>
+   
   );
 }
