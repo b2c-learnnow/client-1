@@ -5,7 +5,6 @@ import { Font } from "../config/Font";
 import LoginImage from "../assets/images/loginimg.jpg";
 import { Link } from "react-router-dom";
 
-
 const Logo = styled.h1`
   font-size: ${(props) => props.fontSize};
   color: #3949ab;
@@ -74,7 +73,7 @@ export default function addressPage() {
               </div>
             </div>
             <div className="loginwhitecard">
-            <div className="container">
+              <div className="container">
                 <Logo fontSize={"25px"} className="p-3 ">
                   LOGO
                 </Logo>

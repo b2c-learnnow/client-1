@@ -9,7 +9,6 @@ const Logo = styled.h1`
   font-size: ${(props) => props.fontSize};
   color: #3949ab;
 `;
-
 const InputNumber = styled.input({
   padding: "8px 10px 10px 0",
   width: "100%",
@@ -17,7 +16,6 @@ const InputNumber = styled.input({
   backgroundColor: Colors.White,
   border: "none",
   borderBottom: "1px solid lightgrey",
-
   outline: "none",
 });
 

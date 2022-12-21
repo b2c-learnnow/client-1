@@ -5,7 +5,6 @@ import SearchBar from "../components/SearchBar";
 import Footer from "../components/Footer";
 import IconButton from "../elements/IconButton";
 import { Colors } from "../config/Colors";
-import { BsFillHandbagFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 const CartItem = [
   {
@@ -66,7 +65,6 @@ export default function Cart() {
                             <p className="primarysmfont">1</p>
                             <div className="logintext ps-2">
                               <p className="bold-small"> LOGIN </p>
-
                               <p className="greysmallfont">
                                 Flipkart Customer +999xxxxxxx
                               </p>
@@ -103,7 +101,6 @@ export default function Cart() {
                             <p className="primarysmfont">2</p>
                             <div className="logintext ps-2">
                               <p className="bold-small"> DELIVERY ADDRESS </p>
-
                               <p className="greysmallfont">
                                 Arizona, California, United States
                               </p>
@@ -133,7 +130,6 @@ export default function Cart() {
                       </div>
                     </div>
                   </div>
-
                   <div className="linecard">
                     <div>
                       <div className="container p-3">
@@ -142,7 +138,6 @@ export default function Cart() {
                             <p className="primarysmfont">3</p>
                             <div className="logintext ps-2">
                               <p className="bold-small"> ORDER SUMMARY </p>
-
                               <p className="greysmallfont">3 Items</p>
                             </div>
                           </div>
@@ -171,7 +166,6 @@ export default function Cart() {
                       </div>
                     </div>
                   </div>
-
                   <div className="linecard">
                     <div>
                       <div className="container p-3">
@@ -180,24 +174,20 @@ export default function Cart() {
                             <p className="primarysmfont">4</p>
                             <div className="logintext ps-2">
                               <p className="bold-small"> PAYMENT OPTION </p>
-
                               <div className="d-flex pt-3 ">
                                 <input type="radio"></input>
                                 <p className="bold-small ps-2">UPI</p>
                               </div>
-
                               <div className="d-flex pt-3 ">
                                 <input type="radio"></input>
                                 <p className="bold-small ps-2">Wallet</p>
                               </div>
-
                               <div className="d-flex pt-3 ">
                                 <input type="radio"></input>
                                 <p className="bold-small ps-2">
                                   Credit / Debit / ATM Card
                                 </p>
                               </div>
-
                               <div className="d-flex pt-3 ">
                                 <input type="radio"></input>
                                 <p className="bold-small ps-2">

@@ -21,7 +21,8 @@ const CartItem = [
     Removebtn: "REMOVE",
     Delivery: "Delivery by Thu Nov 26 | $5",
     Policy: "     7 Days Replacement Policy",
-  }, {
+  },
+  {
     imgUrl:
       "https://images.unsplash.com/photo-1588546506381-74592e9b8a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzN8fGxhcHRvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
     ProductName:
@@ -35,7 +36,6 @@ const CartItem = [
     Delivery: "Delivery by Thu Nov 26 | $5",
     Policy: "     7 Days Replacement Policy",
   },
-
   {
     imgUrl:
       "https://images.unsplash.com/photo-1588546506381-74592e9b8a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzN8fGxhcHRvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
@@ -124,7 +124,6 @@ export default function Cart() {
                     </div>
                   ))}
                 </div>
-
                 <div className="col-2 "></div>
                 <div className="col-3  ">
                   <div
@@ -163,7 +162,6 @@ export default function Cart() {
                 </div>
               </div>
             </div>
-
             <div
               className="mt-3"
               style={{
