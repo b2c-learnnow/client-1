@@ -9,17 +9,6 @@ import { Font } from "../config/Font";
 import { Link } from "react-router-dom";
 import IconButton from "../elements/IconButton";
 import { MdLocationOn } from "react-icons/md";
-const Creamybtn = styled.button({
-  border: "1px solid #e0e0e0",
-  backgroundColor: Colors.Primary,
-  borderRadius: "4px",
-  padding: "4px 10px",
-  color: Colors.White,
-  cursor: "pointer",
-  fontWeight: "500",
-  boxShadow: "0 0 2px rgb(0 0 0 / 12%)",
-  fontSize: Font.Small,
-});
 
 export default function CartPage() {
   return (
@@ -28,7 +17,6 @@ export default function CartPage() {
         <TopNav />
         <Header />
         <SearchBar selectedCategory={"All Categories"} queryParams={""} />
-
         <div>
           <div className="container">
             <div className="row">
@@ -41,7 +29,6 @@ export default function CartPage() {
                           <p className="primarysmfont">1</p>
                           <div className="logintext ps-2">
                             <p className="bold-small"> LOGIN </p>
-
                             <p className="greysmallfont">
                               Flipkart Customer +999xxxxxxx
                             </p>
@@ -70,11 +57,9 @@ export default function CartPage() {
                     </div>
                   </div>
                 </div>
-
                 <div className="linecard p-3 mt-1">
                   <div className=" d-flex">
                     <p className="primarysmfont ">2</p>
-
                     <p className="ps-2 bold-small"> DELIVERY ADDRESS</p>
                   </div>
                   <div className="d-flex pt-3 ps-4">
@@ -100,74 +85,63 @@ export default function CartPage() {
                         Use my current location
                       </span>
                     </IconButton>
-
                     <div className="pt-3">
                       <input
                         type="text"
                         placeholder="Name"
                         className="greyinput"
-                      ></input>
-
+                      />
                       <input
                         type="number"
                         placeholder="10-digit mobile number"
                         className="greyinput ms-3"
-                      ></input>
+                      />
                     </div>
-
                     <div className=" pt-3">
                       <input
                         type="number"
                         placeholder="Pincode"
                         className="greyinput"
-                      ></input>
-
+                      />
                       <input
                         type="text"
                         placeholder="Locality"
                         className="greyinput ms-3"
-                      ></input>
+                      />
                     </div>
-
                     <div className="pt-3">
                       <textarea
                         type="text"
                         placeholder="Address (Area and Street)"
                         className="greyinput"
                         style={{ width: "518px" }}
-                      ></textarea>
+                      />
                     </div>
-
                     <div className=" pt-2">
                       <input
                         type="text"
                         placeholder="City/District/Town"
                         className="greyinput"
-                      ></input>
-
+                      />
                       <input
                         className="greyinput ms-3"
                         type="text"
                         placeholder="State"
-                      ></input>
+                      />
                     </div>
-
                     <div className=" pt-3">
                       <input
                         type="text"
                         placeholder="Landmark (Optional)"
                         className="greyinput"
-                      ></input>
-
+                      />
                       <input
                         type="number"
                         placeholder="Alternate Phone (Optional)"
                         className="greyinput ms-3"
-                      ></input>
+                      />
                     </div>
-
                     <p className=" pt-3 bold-small">Address Type</p>
-
                     <div className="d-flex">
                       <div className="d-flex pt-1">
                         <input type="radio"></input>
@@ -175,7 +149,6 @@ export default function CartPage() {
                           Home (All day delivery)
                         </p>
                       </div>
-
                       <div className="d-flex pt-1 ps-5">
                         <input type="radio"></input>
                         <p className="ps-2 greysmallfont">
@@ -183,7 +156,6 @@ export default function CartPage() {
                         </p>
                       </div>
                     </div>
-
                     <div className=" d-flex  mt-2">
                       <Link to={"/ordersummary"}>
                         <IconButton
@@ -202,40 +174,36 @@ export default function CartPage() {
                           <span className="mx-auto">SAVE AND DELIVER HERE</span>
                         </IconButton>
                       </Link>
-<Link to={"/cart"}>
-                      <IconButton
-                        background={Colors.creamy}
-                        hover={Colors.GreyLight}
-                        color="black  "
-                        className=" py-3"
-                        style={{
-                          fontWeight: "bold",
-                          textTransform: "uppercase",
-                          textAlign: "center",
-                          height: "30px",
-                          width: "100px",
-                          marginLeft: "15px",
-                        }}
-                      >
-                        <span className="mx-auto">CANCEL</span>
-                      </IconButton>
+                      <Link to={"/cart"}>
+                        <IconButton
+                          background={Colors.creamy}
+                          hover={Colors.GreyLight}
+                          color="black  "
+                          className=" py-3"
+                          style={{
+                            fontWeight: "bold",
+                            textTransform: "uppercase",
+                            textAlign: "center",
+                            height: "30px",
+                            width: "100px",
+                            marginLeft: "15px",
+                          }}
+                        >
+                          <span className="mx-auto">CANCEL</span>
+                        </IconButton>
                       </Link>
                     </div>
                   </div>
                 </div>
-
                 <div className="linecard mt-1 p-2">
                   <div className=" d-flex">
                     <p className=" primarysmfont mt-1">3</p>
-
                     <p className="bold-small ms-2 pt-1">ORDER SUMMARY </p>
                   </div>
                 </div>
-
                 <div className="linecard mt-1 p-2">
                   <div className=" d-flex">
                     <p className=" primarysmfont mt-1">4</p>
-
                     <p className="bold-small ms-2 pt-1">PAYMENT OPTIONS</p>
                   </div>
                 </div>
@@ -279,7 +247,6 @@ export default function CartPage() {
             </div>
           </div>
         </div>
-
         <Footer />
       </div>
     </div>

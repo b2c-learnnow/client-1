@@ -66,7 +66,6 @@ export default function Cart() {
                             <p className="primarysmfont">1</p>
                             <div className="logintext ps-2">
                               <p className="bold-small"> LOGIN </p>
-
                               <p className="greysmallfont">
                                 Flipkart Customer +999xxxxxxx
                               </p>
@@ -103,7 +102,6 @@ export default function Cart() {
                             <p className="primarysmfont">2</p>
                             <div className="logintext ps-2">
                               <p className="bold-small"> DELIVERY ADDRESS </p>
-
                               <p className="greysmallfont">
                                 Arizona, California, United States
                               </p>
@@ -135,7 +133,6 @@ export default function Cart() {
                   </div>
                   <div className=" d-flex mt-3 ms-3">
                     <p className="primarysmfont ">3</p>
-
                     <p className="ps-2 bold-small">ORDER SUMMARY</p>
                   </div>
                   <div className="container">
@@ -191,7 +188,6 @@ export default function Cart() {
                           Terms of Use
                         </div>
                       </div>
-
                       <div>
                         <Link to={"/paymentpage"}>
                           <IconButton

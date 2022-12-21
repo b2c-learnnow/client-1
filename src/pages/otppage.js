@@ -9,12 +9,10 @@ const Logo = styled.h1`
   font-size: ${(props) => props.fontSize};
   color: #3949ab;
 `;
-
 const Otpinput = styled.div({
   marginTop: "70px",
   marginLeft: "110px",
 });
-
 const Verifybtn = styled.button({
   backgroundColor: Colors.Primary,
   boxShadow: "0 1px 2px 0 rgb(0 0 0 / 20%)",
@@ -51,7 +49,6 @@ export default function addressPage() {
                 />
               </div>
             </div>
-
             <div className="loginwhitecard">
               <div className="container">
                 <Logo fontSize={"25px"} className="p-3 ">
@@ -60,12 +57,10 @@ export default function addressPage() {
               </div>
               <div className="pt-4 ">
                 <p className="normalfont">Please enter the OTP sent to</p>
-
                 <div className="d-flex justify-content-center ">
                   <p className="normalfont">999xxxxxxx.</p>
                   <p className="primarynormalfont">Change</p>
                 </div>
-
                 <Otpinput>
                   <div>
                     <div id="otp-holder">
@@ -81,7 +76,6 @@ export default function addressPage() {
                     </div>
                   </div>
                 </Otpinput>
-
                 <div className="pt-4">
                   <Link to={"/"}>
                     <Verifybtn type="submit">Verify</Verifybtn>

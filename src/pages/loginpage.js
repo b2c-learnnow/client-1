@@ -9,7 +9,6 @@ const Logo = styled.h1`
   font-size: ${(props) => props.fontSize};
   color: #3949ab;
 `;
-
 const InputNumber = styled.input({
   padding: "8px 10px 10px 0",
   width: "300px",
@@ -17,10 +16,8 @@ const InputNumber = styled.input({
   backgroundColor: Colors.White,
   border: "none",
   borderBottom: "1px solid lightgrey",
-
   outline: "none",
 });
-
 const Loginuebtn = styled.button({
   backgroundColor: Colors.Primary,
   boxShadow: "0 1px 2px 0 rgb(0 0 0 / 20%)",
@@ -32,7 +29,6 @@ const Loginuebtn = styled.button({
   borderRadius: "2px",
   fontWeight: "500",
 });
-
 const Otpbtn = styled.button({
   border: "none",
   lineHeight: "180%",
