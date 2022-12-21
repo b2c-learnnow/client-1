@@ -112,7 +112,7 @@ const data = [
     decorationText: "Hurry Up! Offer ends in",
     // time: moment(new Date()).add(1, "days"),
     time: moment([2021, 8, 20]).add(1, "months"),
-    rating: "",
+    rating: "   ",
     image: ProductImage,
   },
   {
