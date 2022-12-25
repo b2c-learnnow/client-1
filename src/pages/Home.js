@@ -10,7 +10,9 @@ import HotDeals from "../components/HotDeals";
 import Footer from "../components/Footer";
 import NewArrival from "../components/NewArrival";
 import ProductImage from "../assets/images/product1.jpeg";
-
+import StickyFooter from "../components/StickyFooter";
+import { Font } from "../config/Font";
+import { Colors } from "../config/Colors";
 const NEWPRODUCT_DATA = [
   {
     id: "1",
@@ -179,6 +181,16 @@ export default function HomePage() {
         <FeaturedProducts data={PRODUCT_DATA} Title="Product" />
         <HotDeals />
         <NewArrival />
+        <div
+          className="px-2 py-2  w-100 fixed-bottom d-block d-lg-none"
+          style={{
+            backgroundColor: Colors.Primary,
+            color: "white",
+            fontSize: Font.Medium,
+          }}
+        >
+          <StickyFooter />
+        </div>
         <Footer />
       </div>
     </div>

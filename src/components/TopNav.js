@@ -35,14 +35,14 @@ const TopNav = () => {
   const email = "praispranav@gmail.com";
   return (
     <div
-      className="w-100 py-2"
+      className="w-100 py-2 d-none d-md-block"
       style={{
         backgroundColor: Colors.PrimaryDark,
         color: "white",
         fontSize: Font.ExtraSmall,
       }}
     >
-      <div className="container d-flex justify-content-between align-items-center">
+      <div className="container d-flex  justify-content-between align-items-center">
         <div className="d-flex">
           <p className="mx-2">
             <AiFillPhone classNameName="mx-2" />

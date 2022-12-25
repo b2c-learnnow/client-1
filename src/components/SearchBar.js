@@ -45,6 +45,7 @@ export default function SearchBar({ selectedCategory, queryParams }) {
   };
 
   return (
+    <div className="searchBar-container">
     <div
       className="py-2"
       style={{
@@ -53,6 +54,7 @@ export default function SearchBar({ selectedCategory, queryParams }) {
         fontSize: Font.Medium,
       }}
     >
+     
       <div className="container d-flex align-items-center justify-content-between">
         <div
           style={{ border: `1px solid ${Colors.PrimaryDark}` }}
@@ -173,6 +175,7 @@ export default function SearchBar({ selectedCategory, queryParams }) {
           </span>{" "}
           <BsTruck />
         </div>
+      </div>
       </div>
     </div>
   );
