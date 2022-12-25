@@ -75,21 +75,15 @@ export default function Carousel(props) {
     <div
       className="w-100"
       style={{
-        height: "500px",
+        height: "700px",
         backgroundColor: "rgb(240,240,240)",
         position: "relative",
+        paddingTop: "60px",
       }}
     >
-      <div
-        className="container d-flex flex-column  h-100 justify-content-center"
-        style={{ overflow: "hidden" }}
-      >
-        <div
-          className={`d-flex align-items-center ${
-            props.reversed ? "row-reverse" : ""
-          }  justify-content-between`}
-        >
-          <div className="mx-5 px-5">
+      <div className="row">
+        <div className="col-xxl-5 col-xl-6 col-lg-10 ">
+          <div className=" px-4 ">
             <AnimatePresence>
               {data.map((item, index) => (
                 <>
@@ -102,7 +96,7 @@ export default function Carousel(props) {
                         {data[activeIndex].headerText}
                       </motion.h1>
                       <motion.h1
-                        className="my-3"
+                        className="my-2"
                         initial={{ x: -20 }}
                         animate={{ x: 0 }}
                       >
@@ -114,7 +108,7 @@ export default function Carousel(props) {
                       <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}>
                         <IconButton
                           background={"black"}
-                          className="my-3 px-4 py-2 d-flex align-items-center"
+                          className="my-3 px-4 py-2 align-items-center hidden-mobile"
                           style={{ borderRadius: "30px", fontWeight: "500" }}
                           hover={Colors.PrimaryLight}
                         >
@@ -127,26 +121,43 @@ export default function Carousel(props) {
               ))}
             </AnimatePresence>
           </div>
-          {data.map((item, index) => (
-            <>
-              {/* <AnimatePresence> */}
-              {index === activeIndex && (
-                <motion.img
-                  initial={{ opacity: 0 }}
-                  animate={{
-                    opacity: 1,
-                  }}
-                  exit={{ opacity: 0 }}
-                  src={data[activeIndex].image}
-                  alt="None"
-                  style={{ width: "500px", height: "400px" }}
-                />
-              )}
-              {/* </AnimatePresence> */}
-            </>
-          ))}
         </div>
-        {/* <img src={data} /> */}
+        <div className="col-xxl-7 col-xl-6">
+          <div
+            className="container d-flex  h-100 justify-content-center"
+            style={{ overflow: "hidden" }}
+          >
+            <div
+              className={`d-flex align-items-center ${
+                props.reversed ? "row-reverse" : ""
+              }  justify-content-between`}
+            >
+              {data.map((item, index) => (
+                <>
+                  {/* <AnimatePresence> */}
+                  {index === activeIndex && (
+                    <motion.img
+                      initial={{ opacity: 0 }}
+                      animate={{
+                        opacity: 1,
+                      }}
+                      exit={{ opacity: 0 }}
+                      src={data[activeIndex].image}
+                      alt="None"
+                      style={{
+                        width: "100%",
+                        marginTop: "20px",
+                        height: "400px",
+                      }}
+                    />
+                  )}
+                  {/* </AnimatePresence> */}
+                </>
+              ))}
+            </div>
+            {/* <img src={data} /> */}
+          </div>
+        </div>
       </div>
 
       <BubbleContainer>

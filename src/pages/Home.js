@@ -39,6 +39,60 @@ const NEWPRODUCT_DATA = [
     label: "New",
     image: ProductImage,
   },
+  {
+    id: "1",
+    name: "Slim Fit Denim Scratched High Quality Men's",
+    price: "9.00",
+    discount: "2.25",
+    rating: "4",
+    label: "New",
+    image: ProductImage,
+  },
+  {
+    id: "1",
+    name: "Slim Fit Denim Scratched High Quality Men's",
+    price: "9.00",
+    discount: "2.25",
+    rating: "4",
+    label: "New",
+    image: ProductImage,
+  },
+  {
+    id: "1",
+    name: "Slim Fit Denim Scratched High Quality Men's",
+    price: "9.00",
+    discount: "2.25",
+    rating: "4",
+    label: "New",
+    image: ProductImage,
+  },
+  {
+    id: "1",
+    name: "Slim Fit Denim Scratched High Quality Men's",
+    price: "9.00",
+    discount: "2.25",
+    rating: "4",
+    label: "New",
+    image: ProductImage,
+  },
+  {
+    id: "1",
+    name: "Slim Fit Denim Scratched High Quality Men's",
+    price: "9.00",
+    discount: "2.25",
+    rating: "4",
+    label: "New",
+    image: ProductImage,
+  },
+  {
+    id: "1",
+    name: "Slim Fit Denim Scratched High Quality Men's",
+    price: "9.00",
+    discount: "2.25",
+    rating: "4",
+    label: "New",
+    image: ProductImage,
+  },
 ];
 
 const COMINGSOON_DATA = [
@@ -167,19 +221,19 @@ export default function HomePage() {
   return (
     <div className="w-100 h-100 m-0 p-0">
       <div>
-        <TopNav />
+        {/* <TopNav /> */}
         <Header />
-        <SearchBar selectedCategory={"All Categories"} queryParams={""} />
+        {/* <SearchBar selectedCategory={"All Categories"} queryParams={""} /> */}
         <Carousel data={CARUSEL_DATA} />
         <Carousel data={CARUSEL_DATA} reversed={true} />
-        <Features />
-        <ProductSuggestion1 />
+        {/* <Features /> */}
+        {/* <ProductSuggestion1 /> */}
         <FeaturedProducts data={NEWPRODUCT_DATA} Title="New Product" />
         <FeaturedProducts data={COMINGSOON_DATA} Title=" Coming Soon" />
         <FeaturedProducts data={PRODUCT_DATA} Title="Product" />
         <HotDeals />
-        <NewArrival />
-        <Footer />
+        {/* <NewArrival />
+        <Footer /> */}
       </div>
     </div>
   );

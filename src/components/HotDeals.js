@@ -35,19 +35,19 @@ function Product2({
 
   return (
     <div
-      className="p-5 border mx-2 w-100 border-radius"
+      className="p-5 border mx-2  border-radius"
       onMouseEnter={mouseEnter}
-      style={{ backgroundColor: isMouseInside }}
+      style={{ backgroundColor: isMouseInside , width:"95%" ,}}
       onMouseOut={mouseOut}
     >
-      <div className="d-flex justify-content-between">
+      <div className=" justify-content-between">
         <div
           style={{ flex: 1 / 2 }}
-          className="d-flex justify-content-center align-items-center"
+          className=" justify-content-center align-items-center"
         >
           <img
             src={ProductImage}
-            className="mx-auto"
+            className="d-flex justify-content-center mx-auto"
             style={{ height: "200px" }}
           />
         </div>
@@ -55,12 +55,12 @@ function Product2({
           rating
           <Divider className="w-100" />
           <p
-            className="my-2"
+            className="my-1"
             style={{ fontSize: Font.Normal, color: Colors.Grey }}
           >
             {name}
           </p>
-          <div className="d-flex">
+          <div className="">
             <span
               style={{
                 textDecoration: discount ? "line-through" : "none",
@@ -73,7 +73,7 @@ function Product2({
             {discount && (
               <span
                 style={{ color: Colors.Primary, fontWeight: "500" }}
-                className="mx-2"
+                className="mx-1"
               >
                 $ {discount}
               </span>
@@ -89,7 +89,7 @@ function Product2({
             </span>
           </p>
           <p
-            className="mt-3"
+            className="mt-1"
             style={{ fontSize: Font.ExtraSmall, color: Colors.Grey }}
           >
             {decorationText}
@@ -132,13 +132,17 @@ const data = [
 
 export default function HotDeals() {
   return (
-    <div className="p-5" style={{ backgroundColor: Colors.LightGrey }}>
+    <div className="" style={{ backgroundColor: Colors.LightGrey }}>
       <div className="container">
         <HeaderNormal>Hot Deals</HeaderNormal>
-        <div className="d-flex my-3">
-          {data.map((item) => (
-            <Product2 {...item} key={item.id} />
-          ))}
+        <div className=" my-3">
+          <div className="row g-4 justify-content-center row-cols-1 row-cols-lg-2">
+            {data.map((item) => (
+              <div className="col" key={item}>
+                <Product2 {...item} key={item.id} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

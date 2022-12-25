@@ -14,6 +14,9 @@ const Button = styled.button`
         background: ${props=>props.hover};
         transition: 0.3s;
     }
+    @media (min-width: 500px) {
+        display: none;
+      }
 `;
 
 // const IconButton = ({ icon, text, styleClass }) => {
